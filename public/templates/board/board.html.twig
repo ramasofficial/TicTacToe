@@ -1,0 +1,22 @@
+{% set rowPosition = 0 %}
+{% set columnPosition = 0 %}
+
+{% if board %}
+    <div id="board">
+        {% set rowPosition = 0 %}
+        {% for row in board %}
+            <div class="boardRow">
+                {% set columnPosition = 0 %}
+                {% for column in row %}
+                    {% if column is not empty %}
+                        <div class="boardColumn">{{ column }}</div>
+                    {% else %}
+                        <a href="?next_step=1&row={{ rowPosition }}&column={{ columnPosition }}" class="boardColumn">{{ column }}</a>
+                    {% endif %}
+                    {% set columnPosition = columnPosition + 1 %}
+                {% endfor %}
+            </div>
+            {% set rowPosition = rowPosition + 1 %}
+        {% endfor %}
+    </div>
+{% endif %}

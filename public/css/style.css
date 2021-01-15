@@ -1,0 +1,55 @@
+body {
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+#board {
+    display: inline-block;
+}
+
+.boardRow {
+    display: flex;
+}
+
+.boardColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 50px;
+    text-align: center;
+}
+
+a.boardColumn:hover {
+    background-color: mistyrose;
+}
+
+.boardColumn:first-child {
+    border-left: 1px solid #000;
+}
+
+.boardRow:first-child .boardColumn {
+    border-top: 1px solid #000;
+}
+
+#controls {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.colorOrange {
+    color: orange;
+}
+
+.colorGreen {
+    color: olivedrab;
+}
+
+.colorRed {
+    color: crimson;
+}

@@ -1,0 +1,15 @@
+<div id="controls">
+    {% if winner == 'X' %}
+        <span class="colorGreen"><strong>X</strong> winner!</span>
+    {% elseif winner == 'O' %}
+        <span class="colorRed"><strong>O</strong> winner!</span>
+    {% else %}
+        <span class="colorOrange">{{ winner }}</span>
+    {% endif %}
+
+    {% if winner is not empty %}
+        <form action="index.php" method="post">
+            <button type="submit">Refresh</button>
+        </form>
+    {% endif %}
+</div>

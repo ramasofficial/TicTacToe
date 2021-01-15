@@ -1,0 +1,17 @@
+{
+    "name": "ramas/learn_php",
+    "description": "Training PHP skills.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ramas",
+            "email": "ramas.developer@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {"TicTacToe\\": "src/"}
+    }
+}
