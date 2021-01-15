@@ -21,4 +21,4 @@ $ php -S localhost:8000 -t public/
 ```
 
 # Official author
-Ramas - Full-stack developer, 2021
+Ramas - Full-stack developer, Lithuania - 2021
